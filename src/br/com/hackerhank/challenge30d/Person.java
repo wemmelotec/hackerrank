@@ -1,7 +1,9 @@
 package br.com.hackerhank.challenge30d;
 
 import java.util.Scanner;
-
+/*
+Challenge Day 4
+ */
 public class Person {
     private int age;
 
