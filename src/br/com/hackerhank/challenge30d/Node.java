@@ -1,5 +1,6 @@
 package br.com.hackerhank.challenge30d;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Node {
@@ -10,7 +11,7 @@ public class Node {
         next = null;
     }
 }
-class Solution {
+class Solution2 {
 
     public static  Node insert(Node head,int data) {
         //Complete this method
@@ -36,15 +37,23 @@ class Solution {
     }
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        Node head = null; //objeto do inicio da lista head
-        int N = sc.nextInt(); //quantidade de nós que serão inseridos
-
-        while(N-- > 0) {
-            int ele = sc.nextInt();
-            head = insert(head,ele);
-        }
-        display(head);
-        sc.close();
+//        Scanner sc = new Scanner(System.in);
+//        Node head = null; //objeto do inicio da lista head
+//        int N = sc.nextInt(); //quantidade de nós que serão inseridos
+//
+//        while(N-- > 0) {
+//            int ele = sc.nextInt();
+//            head = insert(head,ele);
+//        }
+//        display(head);
+//        sc.close();
+        LinkedList<String> myLinkedList = new LinkedList<>();
+        System.out.println(myLinkedList.add("First"));
+        myLinkedList.add("Second");
+        myLinkedList.add("Third");
+        myLinkedList.add(1,"Intruso");
+        System.out.println(myLinkedList);
+        myLinkedList.clear();
+        System.out.println(myLinkedList);
     }
 }
