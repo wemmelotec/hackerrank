@@ -12,10 +12,10 @@ public class Day6 {
 
             for (int j = 0; j < t; j++) {
                 String x = input.nextLine();
-                if (x.length() >= 2 && x.length() <= 10000) {
+                if (x.length() >= 2 && x.length() <= 10000) { //length retorna um int da quantidade de caracteres da string
                     for (int i = 0; i < x.length(); i++) {
                         if (i % 2 == 0) {
-                            System.out.print(x.charAt(i));
+                            System.out.print(x.charAt(i)); //charAt retorna o caractere especifico do index informado
                         }
                     }
                     System.out.print(" ");

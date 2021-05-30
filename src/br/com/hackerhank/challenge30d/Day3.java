@@ -1,3 +1,5 @@
+package br.com.hackerhank.challenge30d;
+
 import java.util.Scanner;
 
 public class Day3 {

@@ -17,11 +17,11 @@ public class Day1 {
         /* Read and save an integer, double, and String to your variables.*/
         i2 = scan.nextInt();
         d2 = scan.nextDouble();
-        scan.nextLine();
+        scan.nextLine();//essa linha serve para limpar o cache do scanner
         s2 = scan.nextLine();
         /* Print the sum of both integer variables on a new line. */
         System.out.println(i + i2);
-        System.out.printf("%.1f",d + d2);
+        System.out.printf("%.1f",d + d2); //esta saída serve para definir a quantidade de algarismos após a virgula no double
         System.out.println();
         System.out.println(s + s2);
         scan.close();
