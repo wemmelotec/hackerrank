@@ -9,6 +9,7 @@ public class Day10 {
         int consec1=0;
         if(n>=1 && n<=Math.pow(10,6)){
             String strBinario = Integer.toString(n, 2); //transforma o n para uma string de binario radix é base 2
+            System.out.println(strBinario);
             String[] strparts = strBinario.split("0"); //separa a String onde tiver o 0
             //System.out.println(strparts.length);
             for(int i=0;i<strparts.length;i++ ){

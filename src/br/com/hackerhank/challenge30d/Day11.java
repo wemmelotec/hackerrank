@@ -29,7 +29,13 @@ public class Day11 {
 //            }
 //            System.out.println();
 //        }
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        /*
+        A função do InputStreamReader é servir como um adaptador (Adapter) entre as duas classes
+        - lê bytes de um lado, converte em caracteres do outro, através do uso de uma codificação de caracteres (encoding).
+         Ou seja, ele é um Reader que recebe um InputStream na construção, consumindo dados desse stream e apresentando-os como
+          caracteres para o consumidor, nesse caso a BufferedReader.
+         */
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));//faz a leitura de dados binários a partir do console
 
         List<List<Integer>> arr = new ArrayList<>();
 
