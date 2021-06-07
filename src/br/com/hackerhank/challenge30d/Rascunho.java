@@ -10,11 +10,12 @@ public class Rascunho {
 //        System.out.println(str.replaceAll("a", "b"));
 
 
-        Stream<String> stringStream = Stream.of("Geeks","for","GeeksforGeeks","Geeks Classes");
-        List<String> myList = stringStream.collect(Collectors.toList());
-        System.out.println(myList);
+//        Stream<String> stringStream = Stream.of("Geeks","for","GeeksforGeeks","Geeks Classes");
+//        List<String> myList = stringStream.collect(Collectors.toList());
+//        System.out.println(myList);
 
-
+    boolean teste = false;
+        System.out.println("Teste de operador ternario dentro do sout "+ ((teste) ? "se verdadeiro" : "se falso") );
 
     }
 }

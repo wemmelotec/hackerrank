@@ -1,7 +1,6 @@
 package br.com.hackerhank.challenge30d;
 
 import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Node {
     int data;
@@ -13,7 +12,7 @@ public class Node {
 }
 class Solution2 {
 
-    public static  Node insert(Node head,int data) {
+    public static Node insert(Node head, int data) {
         //Complete this method
         if(head == null) //se o primeiro objeto da linkedlist for vazio insera um novo objeto(nó) a linkedlist com a data informada
             return new Node(data);

@@ -52,8 +52,7 @@ public class Day18 {
         }
 
         //Finally, print whether string s is palindrome or not.
-        System.out.println("The word, " + input + ", is "
-                + ((!isPalindrome) ? "not a palindrome." : "a palindrome."));
+        System.out.println("The word, " + input + ", is " + ((!isPalindrome) ? "not a palindrome." : "a palindrome."));
     }
 
 }
