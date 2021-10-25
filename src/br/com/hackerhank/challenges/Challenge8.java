@@ -3,6 +3,7 @@ package br.com.hackerhank.challenges;
 import java.util.Scanner;
 
 //Tipos de dados DataTypes
+//teste do git
 /*
 Dado uma quantidade de t vezes, repita, dado um número verifique em que tipo ele se encaixa e imprima
  */
