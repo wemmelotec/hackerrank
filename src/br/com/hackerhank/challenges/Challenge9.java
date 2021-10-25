@@ -10,6 +10,7 @@ public class Challenge9 {
         while (input.hasNext()){
             numeroDaLinha++;
             System.out.println(numeroDaLinha+ " " + input.nextLine());
+            //para inserir a credencial
         }
 
 
