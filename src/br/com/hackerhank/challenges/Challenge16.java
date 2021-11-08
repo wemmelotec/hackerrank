@@ -1,33 +1,23 @@
 package br.com.hackerhank.challenges;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Challenge16 {
     public static void main(String[] args) {
-        String s = "welcometojava";
-        String temp = "";
-        int k  = 3;
-        int i = 0;
-        int contador =0;
-        ArrayList<String> list = new ArrayList();
+        Scanner scan=new Scanner(System.in);
 
-        while (contador<s.length()/k){
-            temp = s.substring(i,i+k);
-            list.add(temp);
-            i = i+k;
-            contador++;
+        String str=scan.next();
+        int k=scan.nextInt();
+
+        SortedSet<String> sets = new TreeSet<String>();
+
+        for(int i=0;i<=str.length()-k;i++){
+            sets.add(str.substring(i,i+k));
         }
-//        for (int i = 0; i < s.length()/k; i++) {
-//            temp = s.substring(i,i+k);
-//            list.add(temp);
-//        }
-        System.out.println(list);
-        Collections.sort(list);
-        System.out.println(list);
-        System.out.println(list.get(0));
-        System.out.println(list.get(list.size()-1));
 
+        System.out.println(sets);
+
+        System.out.println(sets.first());
+        System.out.println(sets.last());
     }
 }
