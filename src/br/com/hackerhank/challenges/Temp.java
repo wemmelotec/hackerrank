@@ -1,41 +1,23 @@
 package br.com.hackerhank.challenges;
 
-import java.util.Scanner;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 public class Temp {
 
-    static boolean isAnagram(String a, String b) {
-        // Complete the function
-        if(a.length() != b.length()) {
-            return false;
-        }
-        a = a.toLowerCase();
-        b = b.toLowerCase();
-        int sum = 0;
-        for (char c = 'a'; c <= 'z'; c++) {
-            for (int i=0; i<a.length(); i++) {
-                if (a.charAt(i) == c) {
-                    sum++;
-                }
-                if (b.charAt(i) == c) {
-                    sum--;
-                }
-            }
-            if (sum != 0) {
-                return false;
-            }
-        }
-        return true;
-    }
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        String a = scan.next();
-        String b = scan.next();
-        scan.close();
-        boolean ret = isAnagram(a, b);
-        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+        String str = " as ";
+        //System.out.println(str.trim().length());
+        if ((str.trim()).length() > 0) {
+            System.out.println("The string contains characters other than white spaces \n");
+        } else {
+            System.out.println("The string contains only white spaces \n");
+        }
+
+        str = "    ";
+
+        if ((str.trim()).length() > 0) {
+            System.out.println("The string contains characters other than white spaces \n");
+        } else {
+            System.out.println("The string contains only white spaces \n");
+        }
     }
 }
